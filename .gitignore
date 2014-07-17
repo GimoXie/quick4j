@@ -58,3 +58,4 @@ $RECYCLE.BIN/
 /target
 /work
 /.tomcatplugin
+/src/main/webapp/.#webclasspath
