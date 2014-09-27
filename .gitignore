@@ -7,3 +7,6 @@
 /work
 /.tomcatplugin
 /src/main/webapp/.#webclasspath
+
+.idea
+quick4j.iml
