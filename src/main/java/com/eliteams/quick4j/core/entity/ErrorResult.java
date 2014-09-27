@@ -4,9 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * ErrorResult : 用于响应错误的请求的对象
+ *
  * @author StarZou
- * @class ErrorResult
- * @description 用于响应错误的请求的对象
  * @since 2014-09-27 16:38
  */
 public class ErrorResult extends Result {

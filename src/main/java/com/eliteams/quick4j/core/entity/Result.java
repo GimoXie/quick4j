@@ -3,9 +3,9 @@ package com.eliteams.quick4j.core.entity;
 import java.io.Serializable;
 
 /**
+ * Result : 响应的结果对象
+ *
  * @author StarZou
- * @class Result
- * @description 响应的结果对象
  * @since 2014-09-27 16:28
  */
 public class Result implements Serializable {
