@@ -2,8 +2,7 @@ package com.eliteams.quick4j.core.entity;
 
 
 /**
- * Response JSONResult for RESTful
- * 封装返回JSON格式的数据
+ * JSONResult : Response JSONResult for RESTful,封装返回JSON格式的数据
  *
  * @author StarZou
  * @since 2014年5月26日 上午10:51:46
