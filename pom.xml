@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.eliteams</groupId>
     <artifactId>quick4j</artifactId>
@@ -10,7 +11,7 @@
     <build>
         <finalName>quick4j</finalName>
         <plugins>
-            <!-- mybatis generator 自动生成代码 插件配置 -->
+            <!-- Mybatis generator代码生成插件 配置 -->
             <plugin>
                 <groupId>org.mybatis.generator</groupId>
                 <artifactId>mybatis-generator-maven-plugin</artifactId>
@@ -21,6 +22,8 @@
                     <verbose>true</verbose>
                 </configuration>
             </plugin>
+
+            <!--Maven编译插件 配置-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -32,6 +35,8 @@
                 </configuration>
             </plugin>
         </plugins>
+
+        <!--配置Maven 对resource文件 过滤 -->
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
@@ -156,7 +161,7 @@
         </dependency>
         <!-- springframe end -->
 
-        <!-- mybatis -->
+        <!-- mybatis start-->
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
@@ -168,6 +173,7 @@
             <artifactId>mybatis-spring</artifactId>
             <version>${mybatis.spring.version}</version>
         </dependency>
+        <!--mybatis end-->
 
         <!-- mysql-connector -->
         <dependency>
@@ -182,9 +188,6 @@
             <artifactId>druid</artifactId>
             <version>${druid.version}</version>
         </dependency>
-
-        <!-- tomcat-jdbc DataSource -->
-        <!-- <dependency> <groupId>org.apache.tomcat</groupId> <artifactId>tomcat-jdbc</artifactId> <version>${tomcat.jdbc.version}</version> </dependency> -->
 
         <!-- jackson -->
         <dependency>
