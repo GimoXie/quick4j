@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<web-app xmlns="http://java.sun.com/xml/ns/j2ee" version="2.4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" version="2.4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
     <!-- Spring -->
     <!-- 配置Spring配置文件路径 -->
     <context-param>
@@ -99,6 +99,5 @@
         <exception-type>org.apache.shiro.authz.AuthorizationException</exception-type>
         <location>/rest/page/401</location>
     </error-page>
-
 
 </web-app>
