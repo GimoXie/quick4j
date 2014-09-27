@@ -11,16 +11,16 @@
 
 你可以使用 **quick4j**：
 
-> * 快速搭建一个系统原型，基于Spring + Spring MVC + Mybatis
-> * 封装了常用的CURD，配合mybatis-generator 自动dao、model、mapper层，实现快速开发
-> * 实现mybatis的分页查询模块，支持MySQL、PostgreSQL、SQLServer等数据库分页查询
-> * 一个通用的权限管理模块，基于Apache Shiro的 用户-角色-权限(RBAC)的细粒度权限控制
-> * 大量配置示例，根据需求，自由调整
-> * 大量前端模块化开发示例，与后台最佳的交互
-
-如果你有更好的建议，请分享出来，Let us do better。
-
-作者：starzou
-邮箱：zoutongyuan@163.com
+> * 快速搭建项目原型，基于Spring + Spring MVC + Mybatis，简单轻便、易于扩展的架构，适用于大多数项目
+> * 封装了常用的CURD，配合mybatis-generator 自动生成dao、model、mapper层，减少重复劳动，提高生产力，实现快速、平稳的开发
+> * 实现Mybatis的分页查询模块，支持MySQL、PostgreSQL、SQLServer等数据库分页查询
+> * 通用的权限管理模块，基于Apache Shiro的 用户-角色-权限(RBAC)的细粒度权限控制
+> * 大量配置示例，根据需求，自由优化、调整，达到最佳性能
+> * 大量前端模块化开发示例，积极在探索前端最佳的架构，与后台最佳的交互，构建雄心勃勃的App
 
 ------
+
+###如果你有更好的建议，请分享出来，Let us do better。
+
+Author：starzou  
+Email  ：zoutongyuan@163.com
