@@ -2,6 +2,7 @@ package com.eliteams.quick4j.test.dao;
 
 import java.util.List;
 import javax.annotation.Resource;
+
 import org.junit.Test;
 import com.eliteams.quick4j.core.feature.orm.mybatis.Page;
 import com.eliteams.quick4j.core.feature.test.TestSupport;
@@ -15,6 +16,7 @@ public class UserMapperTest extends TestSupport {
 
     @Test
     public void test_selectByExampleAndPage() {
+        start();
         Page<User> page = new Page<>(1, 3);
         UserExample example = new UserExample();
         example.createCriteria().andIdGreaterThan(2L);
@@ -22,5 +24,6 @@ public class UserMapperTest extends TestSupport {
         for (User user : users) {
             System.err.println(user);
         }
+        end();
     }
 }
