@@ -39,7 +39,7 @@ public class TestSupport extends AbstractJUnit4SpringContextTests {
      * 输出记录
      */
     protected void log() {
-        String text = "开始时间 : " + this.startTime + "\n结束时间 : " + this.endTime + "\n执行时间 : " + (this.endTime - this.startTime);
-        System.err.println(text);
+        String text = "\n开始时间 : " + this.startTime + "\n结束时间 : " + this.endTime + "\n执行时间 : " + (this.endTime - this.startTime);
+        logger.info(text);
     }
 }
