@@ -9,18 +9,33 @@
 
 作为一个 seed(种子) 项目，你可以基于它，快速搭建项目原型，并开发。
 
-你可以使用 **quick4j**：
+#### 你可以使用 **quick4j**：
 
 > * 快速搭建项目原型，基于Spring + Spring MVC + Mybatis，简单轻便、易于扩展的架构，适用于大多数项目
 > * 封装了常用的CURD，配合mybatis-generator 自动生成dao、model、mapper层，减少重复劳动，提高生产力，实现快速、平稳的开发
 > * 实现Mybatis的分页查询模块，支持MySQL、PostgreSQL、SQLServer等数据库分页查询
 > * 通用的权限管理模块，基于Apache Shiro的 用户-角色-权限(RBAC)的细粒度权限控制
 > * 大量配置示例，根据需求，自由优化、调整，达到最佳性能
-> * 大量前端模块化开发示例，积极在探索前端最佳的架构，与后台最佳的交互，构建雄心勃勃的App
+> * 大量前端模块化开发示例，积极在探索前端最佳的架构，与后台最佳的交互，构建雄心勃勃的Application
 
 ------
 
-###如果你有更好的建议，请分享出来，Let us do better。
+## How to get/use it
+> * 1、git clone https://github.com/starzou/quick4j
+* 2、在MySQL中导入 quick4j/src/test/resources/quick4j.sql 脚本
+* 3、更新 quick4j/src/main/resources/application.properties 中 JDBC Global Setting
+* 4、cd quick4j
+* 5、mvn war:war 
+* 6、把 quick4j/target/quick4j.war 发布在App Server(Tomcat、JBOSS) 中
 
-Author：starzou  
-Email  ：zoutongyuan@163.com
+## 在IDE 中查看源码并运行
+> #### 1 、在IntelliJ IDEA
+* File -> Import Project -> select quick4j folder -> create project form existing sources -> ...
+
+> #### 2、 在Eclipse
+* File -> Import -> Existing Maven Projects -> ...
+
+
+## If you have a better suggestion,Please share out,Let's do better.
+> Author ：starzou  
+> Email  ：zoutongyuan@163.com  
