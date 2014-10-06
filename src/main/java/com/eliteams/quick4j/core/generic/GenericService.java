@@ -3,52 +3,59 @@ package com.eliteams.quick4j.core.generic;
 import java.util.List;
 
 /**
- * 所有Service层的 顶级 接口,封装常用的增删查改操作<br>
- * Model : 代表数据库 模型 类型<br>
- * PK :代表模型 的主键 类型<br>
- * 
+ * 所有自定义Service的顶级接口,封装常用的增删查改操作
+ * <p/>
+ * Model : 代表数据库中的表 映射的Java对象类型
+ * PK :代表对象的主键类型
+ *
  * @author StarZou
  * @since 2014年6月9日 下午6:14:06
- **/
+ */
 public interface GenericService<Model, PK> {
 
     /**
-     * 插入 对象
-     * 
-     * @param model
-     *            要插入的对象
+     * 插入对象
+     *
+     * @param model 对象
      */
     int insert(Model model);
 
     /**
      * 更新对象
-     * 
-     * @param model
-     *            要更新的对象
+     *
+     * @param model 对象
      */
     int update(Model model);
 
     /**
-     * 通过id删除对象
-     * 
-     * @param id
-     *            要删除对象的id
+     * 通过主键, 删除对象
+     *
+     * @param id 主键
      */
     int delete(PK id);
 
     /**
-     * 通过 id 查询对象
-     * 
-     * @param id
-     * @return
+     * 通过主键, 查询对象
+     *
+     * @param id 主键
+     * @return model 对象
      */
     Model selectById(PK id);
 
+
     /**
-     * 查询所有对象
-     * 
-     * @return
+     * 查询单个对象
+     *
+     * @return 对象
      */
-    List<Model> selectAll();
+    Model selectOne();
+
+
+    /**
+     * 查询多个对象
+     *
+     * @return 对象集合
+     */
+    List<Model> selectList();
 
 }
