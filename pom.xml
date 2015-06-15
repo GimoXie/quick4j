@@ -23,7 +23,7 @@
                 </configuration>
             </plugin>
 
-            <!--Maven编译插件 配置-->
+            <!-- Maven插件 配置 -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -32,6 +32,15 @@
                     <source>${project.build.jdk}</source>
                     <target>${project.build.jdk}</target>
                     <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${plugin.maven-surefire}</version>
+                <configuration>
+                    <skipTests>${skipTests}</skipTests>
                 </configuration>
             </plugin>
         </plugins>
@@ -70,6 +79,8 @@
         <!-- plugin versions -->
         <plugin.mybatis.generator>1.3.1</plugin.mybatis.generator>
         <plugin.maven-compiler>3.1</plugin.maven-compiler>
+        <plugin.maven-surefire>2.18.1</plugin.maven-surefire>
+        <skipTests>true</skipTests>
 
         <!-- lib versions -->
         <junit.version>4.11</junit.version>
