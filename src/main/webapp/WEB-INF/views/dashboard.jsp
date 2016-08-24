@@ -6,7 +6,7 @@
                 <i class="fa fa-comments"></i>
             </div>
             <div class="details">
-                <div class="number">1349</div>
+                <div class="number">1348</div>
             </div>
             <a class="more" href="#"> View more <i class="m-icon-swapright m-icon-white"></i>
             </a>
