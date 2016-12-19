@@ -6,7 +6,7 @@
     <packaging>war</packaging>
     <version>1.0.0</version>
     <name>quick4j App</name>
-    <url>https://github.com/starzou/quick4j</url>
+    <url>https://github.com/GimoXie/quick4j</url>
 
     <build>
         <finalName>quick4j</finalName>
@@ -88,24 +88,29 @@
         <mybatis.version>3.2.2</mybatis.version>
         <mybatis.spring.version>1.2.2</mybatis.spring.version>
         <mysql.connector.version>5.1.30</mysql.connector.version>
-        <postgresql.version>9.1-901.jdbc4</postgresql.version>
-        <slf4j.version>1.6.6</slf4j.version>
-        <log4j.version>1.2.12</log4j.version>
-        <httpclient.version>4.1.2</httpclient.version>
-        <jackson.version>1.9.13</jackson.version>
-        <c3p0.version>0.9.1.2</c3p0.version>
         <druid.version>1.0.5</druid.version>
-        <tomcat.jdbc.version>7.0.53</tomcat.jdbc.version>
+        <postgresql.version>9.1-901.jdbc4</postgresql.version>
+        <jackson.version>1.9.13</jackson.version>
+        <log4j.version>1.2.12</log4j.version>
+        <slf4j.version>1.6.6</slf4j.version>
+        <javax.servlet.api>3.0.1</javax.servlet.api>
         <jstl.version>1.2</jstl.version>
+        <commons.fileupload.version>1.3.1</commons.fileupload.version>
+        <httpclient.version>4.1.2</httpclient.version>
+        <commons.codec.version>1.9</commons.codec.version>
+        <commons.net.version>3.3</commons.net.version>
+        <commons.logging>1.1.3</commons.logging>
+        <commons.collections>3.2.1</commons.collections>
+        <c3p0.version>0.9.1.2</c3p0.version>
         <google.collections.version>1.0</google.collections.version>
         <cglib.version>3.1</cglib.version>
         <shiro.version>1.2.3</shiro.version>
-        <commons.fileupload.version>1.3.1</commons.fileupload.version>
-        <commons.codec.version>1.9</commons.codec.version>
-        <commons.net.version>3.3</commons.net.version>
         <aspectj.version>1.6.12</aspectj.version>
-        <netty.version>4.0.18.Final</netty.version>
         <hibernate.validator.version>5.1.1.Final</hibernate.validator.version>
+        <netty.version>4.0.18.Final</netty.version>
+        <mybatis.generator.core>1.3.2</mybatis.generator.core>
+        <jedis>2.6.2</jedis>
+        <tomcat.jdbc.version>7.0.53</tomcat.jdbc.version>
     </properties>
 
     <dependencies>
@@ -229,7 +234,7 @@
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
-            <version>3.0.1</version>
+            <version>${javax.servlet.api}</version>
             <scope>provided</scope>
         </dependency>
 
@@ -268,12 +273,12 @@
         <dependency>
             <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
-            <version>1.1.3</version>
+            <version>${commons.logging}</version>
         </dependency>
         <dependency>
             <groupId>commons-collections</groupId>
             <artifactId>commons-collections</artifactId>
-            <version>3.2.1</version>
+            <version>${commons.collections}</version>
         </dependency>
 
         <!-- end apache -->
@@ -349,7 +354,7 @@
         <dependency>
             <groupId>org.mybatis.generator</groupId>
             <artifactId>mybatis-generator-core</artifactId>
-            <version>1.3.2</version>
+            <version>${mybatis.generator.core}</version>
             <type>jar</type>
             <scope>test</scope>
         </dependency>
@@ -357,7 +362,7 @@
         <dependency>
             <groupId>redis.clients</groupId>
             <artifactId>jedis</artifactId>
-            <version>2.6.2</version>
+            <version>${jedis}</version>
             <type>jar</type>
             <scope>compile</scope>
         </dependency>
